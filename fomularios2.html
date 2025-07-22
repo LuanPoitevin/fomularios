@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 2</title>
+    <style>
+        body { background-color: rgb(135, 177, 138);}
+    </style>
+</head>
+<body>
+    <h1>Meu segundo formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <p>
+            <label for="iusu">USUÁRIO:</label>
+            <input type="text" id="iusu" name="usuario" placeholder="Digite seu usuário" required minlength="5" maxlength="20" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">SENHA:</label>
+            <input type="password" name="sen" id="isen" placeholder="Digite sua senha" required minlength="5" maxlength="10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>    
+    </form>
+    
+</body>
+</html>

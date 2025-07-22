@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 3</title>
+    <style>
+        body { background-color: rgb(135, 177, 138);}
+    </style>
+</head>
+<body>
+    <h1>Meu terceiro formulário</h1>
+       <form action="cadastro.php" autocomplete="on" method="post">
+        <p>
+            <label for="inum">SUA IDADE:</label>
+            <input type="number" id="inum" name="numero" placeholder="Digite um número" required min="0" max="15" autocomplete="off" >
+        </p>
+        <p>
+            <label for="imes">MÊS:</label>
+            <input type="month" id="imes" name="mes" required>
+        </p>
+        <p>
+            <label for="itime">HORÁRIO:</label>
+            <input type="time" id="itime" name="horario" required>
+        </p>
+        <p>
+            <label for="idata">DATA:</label>
+            <input type="date" id="idata" name="data" required>
+        </p>
+        <P>
+            <label for="iemail">EMAIL:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required autocomplete="email">
+        </P>
+        <P>
+           <label for="icor">COR:</label>
+           <input type="color" id="icor" name="cor" required>
+        </P>
+        <p>
+            <label for="inv">QUAL O SEU NÍVEL (0-10) </label>
+            <input type="range" id="inv" name="nivel" min="0" max="10" step="1" value="5" required>
+        </p>
+        <p>
+            <label for="iaqv">ARQUIVO//FOTO:</label>
+            <input type="file" id="iaqv" name="arquivo" accept=".jpg, .jpeg, .png, .gif" required>
+        </p>
+
+        <p>
+            <label for="imsg"> MENSAGEM: </label> <br>
+            <textarea name="mdg" id="imsg" cols="30" role="10"></textarea>
+        </p>
+       
+       </form>
+
+    
+</body>
+</html>
